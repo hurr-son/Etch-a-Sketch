@@ -23,14 +23,20 @@ function createDivsForGrid(rows, columns) {
         }
         divContainer.appendChild(row);
     }
+
 }
 
 createDivsForGrid(16, 16);
 
 
-
-
-
-
 //Figure out a way to use the 'hover' event to make the 
 //divs change color as the mouse hovers over them 
+const allBoxes = document.querySelectorAll('.gridDiv');
+
+
+allBoxes.forEach(div => {div.addEventListener('mouseover', 
+function handleMouseOver() {
+    div.style.backgroundColor = 'red';
+})})
+
+
