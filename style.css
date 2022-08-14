@@ -1,4 +1,5 @@
-body {
+body,
+footer {
     background-color: rgb(241, 241, 241);
 }
 
@@ -7,8 +8,9 @@ body {
 h1,
 #bottom-container,
 button,
-#gridValue {
-    font-family: 'Courier New', Courier, monospace
+#gridValue,
+footer {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -36,7 +38,9 @@ button,
 
 
 h1,
-#bottom-container {
+#bottom-container,
+footer,
+a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +54,7 @@ h1,
 }
 
 h1 {
-    padding-top: 3%;
+    padding-top: 1%;
     font-size: 40px;
     
 }
@@ -71,4 +75,21 @@ button {
     margin-top: 10px;
     font-size: 15px;
     max-width: 125px;
+}
+
+
+footer {
+    margin-top: 80px;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+    
+}
+
+#gh-logo {
+    margin-left: 7px;
+    margin-right: 6px;
 }
