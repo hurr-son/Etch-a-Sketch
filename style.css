@@ -1,4 +1,20 @@
+body {
+    background-color: rgb(241, 241, 241);
+}
+
+
+
+h1,
+#bottom-container,
+button,
+#gridValue {
+    font-family: 'Courier New', Courier, monospace
+}
+
+
+
 #container {
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +27,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 2%;
+    
+    border: 1px solid black;
+    box-shadow: 5px 5px;
      
   
 }
@@ -26,16 +44,31 @@ h1,
 
 #bottom-container{
     flex-direction: column;
-    padding-top: 2%;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 3%;
 }
 
 h1 {
     padding-top: 3%;
     font-size: 40px;
+    
 }
 
 
 button {
-    margin: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: .2em .5em;
+    box-shadow: 2px 2px 3px;
+
     
+}
+
+#gridValue {
+    margin-top: 10px;
+    font-size: 15px;
+    max-width: 125px;
 }
